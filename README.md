@@ -47,7 +47,7 @@ Este es un proyecto de código abierto. Las contribuciones son bienvenidas:
 3. Commit tus cambios: `git commit -m 'Agrega nueva funcionalidad'`
 4. Push a la rama: `git push origin feature/nueva-funcionalidad`
 5. Abre un Pull Request
-6. Donar para conseguir un dominio y un host https://www.paypal.com/donate/?hosted_button_id=CWNQWH7JSJYC2
+6. Donar para dominio y hosting indepentientes de hithub https://www.paypal.com/donate/?hosted_button_id=CWNQWH7JSJYC2
 
 ## 📜 Licencia
 
