@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software de Oficina - softwarelibresv.com</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .program-card {
+            background: white;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            border-left: 4px solid #0066cc;
+        }
+        .program-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: start;
+            margin-bottom: 1rem;
+        }
+        .program-title {
+            color: #0066cc;
+            font-size: 1.4rem;
+            margin-bottom: 0.3rem;
+        }
+        .program-version {
+            color: #666;
+            font-size: 0.9rem;
+        }
+        .program-platforms {
+            display: flex;
+            gap: 0.5rem;
+        }
+        .platform-badge {
+            background: #e0e0e0;
+            padding: 0.3rem 0.6rem;
+            border-radius: 4px;
+            font-size: 0.8rem;
+        }
+        .program-description {
+            margin: 1rem 0;
+            line-height: 1.6;
+        }
+        .program-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 1px solid #eee;
+        }
+        .license-badge {
+            background: #d4edda;
+            color: #155724;
+            padding: 0.3rem 0.8rem;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            font-weight: bold;
+        }
+        .download-btn {
+            background: #0066cc;
+            color: white;
+            padding: 0.7rem 1.5rem;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        .download-btn:hover {
+            background: #004499;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>softwarelibresv.com</h1>
+                <p class="tagline">Recopilaciones de Software Libre para El Salvador</p>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="index.html" class="active">Catálogo</a></li>
+                    <li><a href="../boletin/index.html">Boletín</a></li>
+                    <li><a href="../descargas/index.html">Recopilaciones</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <aside class="sidebar">
+            <nav class="secondary-nav">
+                <h3>Categorías</h3>
+                <ul>
+                    <li><a href="index.html">📚 Todos los Programas</a></li>
+                    <li><a href="oficina.html">📝 Oficina (78)</a></li>
+                    <li><a href="internet.html">🌐 Internet (95)</a></li>
+                    <li><a href="multimedia.html">🎵 Multimedia (112)</a></li>
+                    <li><a href="graficos.html">🎨 Gráficos (67)</a></li>
+                    <li><a href="educacion.html">🎓 Educación (54)</a></li>
+                    <li><a href="programacion.html">💻 Programación (71)</a></li>
+                    <li><a href="juegos.html">🎮 Juegos (29)</a></li>
+                    <li><a href="utilidades.html">🔧 Utilidades (17)</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="content">
+            <article class="welcome">
+                <h1>📝 Software de Oficina</h1>
+                <p>Suites ofimáticas, procesadores de texto, hojas de cálculo, gestores de proyectos y herramientas de productividad. <strong>78 programas disponibles</strong></p>
+            </article>
+
+            <h2 style="color: #0066cc; margin-bottom: 1.5rem;">Suites Ofimáticas Completas</h2>
+
+            <div class="program-card">
+                <div class="program-header">
+                    <div>
+                        <h3 class="program-title">LibreOffice</h3>
+                        <div class="program-version">Versión 24.2</div>
+                    </div>
+                    <div class="program-platforms">
+                        <span class="platform-badge">Windows</span>
+                        <span class="platform-badge">Linux</span>
+                        <span class="platform-badge">macOS</span>
+                    </div>
+                </div>
+                <div class="program-description">
+                    La suite ofimática libre más completa y popular. Incluye Writer (procesador de textos), Calc (hojas de cálculo), Impress (presentaciones), Base (bases de datos), Draw (diagramas) y Math (fórmulas). Excelente compatibilidad con formatos de Microsoft Office (.docx, .xlsx, .pptx). Ideal para uso personal, educativo y empresarial.
+                </div>
+                <div class="program-footer">
+                    <span class="license-badge">MPL 2.0</span>
+                    <a href="https://www.libreoffice.org/download/download/" class="download-btn" target="_blank">Descargar →</a>
+                </div>
+            </div>
+
+            <div class="program-card">
+                <div class="program-header">
+                    <div>
+                        <h3 class="program-title">Apache OpenOffice</h3>
+                        <div class="program-version">Versión 4.1.14</div>
+                    </div>
+                    <div class="program-platforms">
+                        <span class="platform-badge">Windows</span>
+                        <span class="platform-badge">Linux</span>
+                        <span class="platform-badge">macOS</span>
+                    </div>
+                </div>
+                <div class="program-description">
+                    Suite ofimática completa y madura con funciones similares a LibreOffice. Incluye procesador de textos, hoja de cálculo, presentaciones, gráficos, bases de datos y editor de fórmulas matemáticas. Requiere menos recursos que otras suites, ideal para computadoras antiguas.
+                </div>
+                <div class="program-footer">
+                    <span class="license-badge">Apache 2.0</span>
+                    <a href="https://www.openoffice.org/download/" class="download-btn" target="_blank">Descargar →</a>
+                </div>
+            </div>
+
+            <h2 style="color: #0066cc; margin: 2rem 0 1.5rem;">Procesadores de Texto</h2>
+
+            <div class="program-card">
+                <div class="program-header">
+                    <div>
+                        <h3 class="program-title">AbiWord</h3>
+                        <div class="program-version">Versión 3.0.5</div>
+                    </div>
+                    <div class="program-platforms">
+                        <span class="platform-badge">Windows</span>
+                        <span class="platform-badge">Linux</span>
+                    </div>
+                </div>
+                <div class="program-description">
+                    Procesador de textos ligero y rápido, perfecto para documentos simples. Soporta formatos .doc, .docx, .rtf, .odt y más. Ocupa poco espacio en disco y consume pocos recursos, ideal para netbooks y computadoras de bajos recursos. Incluye corrector ortográfico multiidioma.
+                </div>
+                <div class="program-footer">
+                    <span class="license-badge">GPL v2</span>
+                    <a href="https://www.abisource.com/download/" class="download-btn" target="_blank">Descargar →</a>
+                </div>
+            </div>
+
+            <div class="program-card">
+                <div class="program-header">
+                    <div>
+                        <h3 class="program-title">Notepad++</h3>
+                        <div class="program-version">Versión 8.6</div>
+                    </div>
+                    <div class="program-platforms">
+                        <span class="platform-badge">Windows</span>
+                    </div>
+                </div>
+                <div class="program-description">
+                    Editor de texto avanzado con resaltado de sintaxis para más de 80 lenguajes de programación. Aunque está orientado a programadores, también sirve para edición de texto plano con múltiples pestañas, búsqueda y reemplazo avanzado, macros y plugins. Muy ligero y rápido.
+                </div>
+                <div class="program-footer">
+                    <span class="license-badge">GPL v3</span>
+                    <a href="https://notepad-plus-plus.org/downloads/" class="download-btn" target="_blank">Descargar →</a>
+                </div>
+            </div>
+
+            <h2 style="color: #0066cc; margin: 2rem 0 1.5rem;">Hojas de Cálculo</h2>
+
+            <div class="program-card">
+                <div class="program-header">
+                    <div>
+                        <h3 class="program-title">Gnumeric</h3>
+                        <div class="program-version">Versión 1.12.55</div>
+                    </div>
+                    <div class="program-platforms">
+                        <span class="platform-badge">Windows</span>
+                        <span class="platform-badge">Linux</span>
+                    </div>
+                </div>
+                <div class="program-description">
+                    Hoja de cálculo ligera y precisa, especialmente buena para análisis estadístico. Soporta más de 150 funciones y tiene alta precisión en cálculos complejos. Compatible con archivos .xlsx y .xls. Requiere menos recursos que Calc de LibreOffice.
+                </div>
+                <div class="program-footer">
+                    <span class="license-badge">GPL v3</span>
+                    <a href="http://www.gnumeric.org/download.html" class="download-btn" target="_blank">Descargar →</a>
+                </div>
+            </div>
+
+            <h2 style="color: #0066cc; margin: 2rem 0 1.5rem;">Gestión de Proyectos</h2>
+
+            <div class="program-card">
+                <div class="program-header">
+                    <div>
+                        <h3 class="program-title">ProjectLibre</h3>
+                        <div class="program-version">Versión 1.9.3</div>
+                    </div>
+                    <div class="program-platforms">
+                        <span class="platform-badge">Windows</span>
+                        <span class="platform-badge">Linux</span>
+                        <span class="platform-badge">macOS</span>
+                    </div>
+                </div>
+                <div class="program-description">
+                    Software de gestión de proyectos compatible con Microsoft Project. Permite crear diagramas de Gantt, gestionar recursos, costos y calendarios. Ideal para administradores de proyectos que necesitan planificar, rastrear y analizar proyectos complejos. Interfaz intuitiva similar a MS Project.
+                </div>
+                <div class="program-footer">
+                    <span class="license-badge">CPAL 1.0</span>
+                    <a href="https://www.projectlibre.com/product/projectlibre-open-source" class="download-btn" target="_blank">Descargar →</a>
+                </div>
+            </div>
+
+            <div class="program-card">
+                <div class="program-header">
+                    <div>
+                        <h3 class="program-title">GanttProject</h3>
+                        <div class="program-version">Versión 3.2</div>
+                    </div>
+                    <div class="program-platforms">
+                        <span class="platform-badge">Windows</span>
+                        <span class="platform-badge">Linux</span>
+                        <span class="platform-badge">macOS</span>
+                    </div>
+                </div>
+                <div class="program-description">
+                    Herramienta de planificación de proyectos con diagramas de Gantt y gráficos PERT. Permite asignar recursos, establecer dependencias entre tareas, crear hitos y generar reportes. Exporta a PDF, HTML y puede importar/exportar archivos de Microsoft Project. Escrito en Java, multiplataforma.
+                </div>
+                <div class="program-footer">
+                    <span class="license-badge">GPL v3</span>
+                    <a href="https://www.ganttproject.biz/download" class="download-btn" target="_blank">Descargar →</a>
+                </div>
+            </div>
+
+            <h2 style="color: #0066cc; margin: 2rem 0 1.5rem;">PDF y Documentos</h2>
+
+            <div class="program-card">
+                <div class="program-header">
+                    <div>
+                        <h3 class="program-title">PDFtk Free</h3>
+                        <div class="program-version">Versión 3.3.3</div>
+                    </div>
+                    <div class="program-platforms">
+                        <span class="platform-badge">Windows</span>
+                        <span class="platform-badge">Linux</span>
+                        <span class="platform-badge">macOS</span>
+                    </div>
+                </div>
+                <div class="program-description">
+                    Herramienta gratuita para manipular archivos PDF. Permite unir, dividir, rotar, encriptar, desencriptar, agregar marcas de agua, rellenar formularios y extraer páginas de PDFs. Interfaz gráfica simple y también línea de comandos para automatización. No requiere instalación pesada.
+                </div>
+                <div class="program-footer">
+                    <span class="license-badge">GPL v2</span>
+                    <a href="https://www.pdflabs.com/tools/pdftk-the-pdf-toolkit/" class="download-btn" target="_blank">Descargar →</a>
+                </div>
+            </div>
+
+            <div class="program-card">
+                <div class="program-header">
+                    <div>
+                        <h3 class="program-title">Sumatra PDF</h3>
+                        <div class="program-version">Versión 3.5</div>
+                    </div>
+                    <div class="program-platforms">
+                        <span class="platform-badge">Windows</span>
+                    </div>
+                </div>
+                <div class="program-description">
+                    Lector de PDF ultrarrápido y minimalista. Abre PDF, ePub, MOBI, XPS, DjVu, CHM, CBZ y CBR. Diseñado para ser simple y eficiente, consume muy pocos recursos. Ideal para leer documentos sin necesidad de funciones de edición. Portable, no requiere instalación.
+                </div>
+                <div class="program-footer">
+                    <span class="license-badge">GPL v3</span>
+                    <a href="https://www.sumatrapdfreader.org/download-free-pdf-viewer" class="download-btn" target="_blank">Descargar →</a>
+                </div>
+            </div>
+
+            <h2 style="color: #0066cc; margin: 2rem 0 1.5rem;">Toma de Notas y Organización</h2>
+
+            <div class="program-card">
+                <div class="program-header">
+                    <div>
+                        <h3 class="program-title">Joplin</h3>
+                        <div class="program-version">Versión 2.13</div>
+                    </div>
+                    <div class="program-platforms">
+                        <span class="platform-badge">Windows</span>
+                        <span class="platform-badge">Linux</span>
+                        <span class="platform-badge">macOS</span>
+                    </div>
+                </div>
+                <div class="program-description">
+                    Aplicación de código abierto para tomar notas y crear listas de tareas. Soporta Markdown, sincronización entre dispositivos, encriptación de extremo a extremo, adjuntar archivos y organización con libretas y etiquetas. Alternativa a Evernote que respeta tu privacidad. Sincroniza con Dropbox, OneDrive, Nextcloud.
+                </div>
+                <div class="program-footer">
+                    <span class="license-badge">MIT</span>
+                    <a href="https://joplinapp.org/download/" class="download-btn" target="_blank">Descargar →</a>
+                </div>
+            </div>
+
+            <div class="program-card">
+                <div class="program-header">
+                    <div>
+                        <h3 class="program-title">Obsidian</h3>
+                        <div class="program-version">Versión 1.5</div>
+                    </div>
+                    <div class="program-platforms">
+                        <span class="platform-badge">Windows</span>
+                        <span class="platform-badge">Linux</span>
+                        <span class="platform-badge">macOS</span>
+                    </div>
+                </div>
+                <div class="program-description">
+                    Base de conocimiento personal potente basada en archivos Markdown locales. Crea enlaces entre notas, visualiza conexiones con gráficos, soporta plugins y temas personalizados. Perfecto para estudiantes, investigadores y escritores que quieren crear su "segundo cerebro". Tus datos permanecen en tu computadora.
+                </div>
+                <div class="program-footer">
+                    <span class="license-badge">Gratis (comercial)</span>
+                    <a href="https://obsidian.md/download" class="download-btn" target="_blank">Descargar →</a>
+                </div>
+            </div>
+
+            <h2 style="color: #0066cc; margin: 2rem 0 1.5rem;">Calendarios y Organización</h2>
+
+            <div class="program-card">
+                <div class="program-header">
+                    <div>
+                        <h3 class="program-title">Mozilla Thunderbird</h3>
+                        <div class="program-version">Versión 115.7</div>
+                    </div>
+                    <div class="program-platforms">
+                        <span class="platform-badge">Windows</span>
+                        <span class="platform-badge">Linux</span>
+                        <span class="platform-badge">macOS</span>
+                    </div>
+                </div>
+                <div class="program-description">
+                    Cliente de correo electrónico completo con calendario y gestión de tareas integrados. Soporta múltiples cuentas, filtros anti-spam, encriptación PGP, RSS feeds y extensiones. Desarrollado por Mozilla Foundation. Alternativa completa a Outlook que respeta tu privacidad. Sincroniza calendarios con CalDAV.
+                </div>
+                <div class="program-footer">
+                    <span class="license-badge">MPL 2.0</span>
+                    <a href="https://www.thunderbird.net/es-ES/" class="download-btn" target="_blank">Descargar →</a>
+                </div>
+            </div>
+
+            <div style="background: #e7f3ff; padding: 1.5rem; border-radius: 8px; margin-top: 2rem;">
+                <h3 style="color: #0066cc;">💡 Recomendación</h3>
+                <p>Para la mayoría de usuarios, <strong>LibreOffice</strong> es la mejor opción como suite ofimática completa. Si necesitás algo más ligero, prueba <strong>AbiWord</strong> para textos y <strong>Gnumeric</strong> para hojas de cálculo.</p>
+                <p>Para tomar notas y organización personal, <strong>Joplin</strong> u <strong>Obsidian</strong> son excelentes opciones modernas.</p>
+            </div>
+
+            <div style="background: #fff3cd; border-left: 4px solid #ffc107; padding: 1.5rem; margin-top: 1.5rem; border-radius: 4px;">
+                <h3 style="color: #856404;">📦 Descarga la Recopilación Completa</h3>
+                <p style="color: #856404;">Todos estos programas y más están disponibles en nuestra <a href="../descargas/index.html" style="color: #004085; font-weight: bold;">Recopilación de Oficina</a> lista para descargar en formato ISO.</p>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>
+                <strong>softwarelibresv.com</strong> - Promoviendo el Software Libre en El Salvador<br>
+                Licenciado bajo <a href="https://www.apache.org/licenses/LICENSE-2.0" target="_blank" style="color: #6db3f2;">Apache License 2.0</a><br>
+                © 2025 softwarelibresv.com - Todos los derechos reservados
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

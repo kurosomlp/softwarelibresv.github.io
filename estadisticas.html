@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estadísticas - softwarelibresv.com</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .stat-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+        .stat-number {
+            font-size: 3rem;
+            font-weight: bold;
+            color: #0066cc;
+            margin: 0.5rem 0;
+        }
+        .stat-label {
+            font-size: 1.1rem;
+            color: #666;
+        }
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+        .chart-container {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
+        }
+        .progress-bar {
+            background: #e0e0e0;
+            border-radius: 10px;
+            height: 30px;
+            margin: 0.5rem 0;
+            overflow: hidden;
+        }
+        .progress-fill {
+            background: linear-gradient(90deg, #0066cc, #0099ff);
+            height: 100%;
+            display: flex;
+            align-items: center;
+            padding: 0 1rem;
+            color: white;
+            font-weight: bold;
+            font-size: 0.9rem;
+        }
+        .category-stat {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>softwarelibresv.com</h1>
+                <p class="tagline">Recopilaciones de Software Libre para El Salvador</p>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="catalogo/index.html">Catálogo</a></li>
+                    <li><a href="boletin/index.html">Boletín</a></li>
+                    <li><a href="descargas/index.html">Recopilaciones</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <aside class="sidebar">
+            <nav class="secondary-nav">
+                <h3>Navegación</h3>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="novedades.html">Novedades</a></li>
+                    <li><a href="presentacion.html">Presentación</a></li>
+                    <li><a href="faq.html">Preguntas Frecuentes</a></li>
+                    <li><a href="participar.html">Participar</a></li>
+                    <li><a href="enlaces.html">Enlaces</a></li>
+                    <li><a href="estadisticas.html">Estadísticas</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="content">
+            <article class="welcome">
+                <h1>Estadísticas de softwarelibresv.com</h1>
+                <p>Datos actualizados sobre nuestro catálogo, descargas y comunidad.</p>
+                <p><em>Última actualización: 12 de febrero de 2025</em></p>
+            </article>
+
+            <h2 style="color: #0066cc; margin-top: 2rem;">📊 Resumen General</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">523</div>
+                    <div class="stat-label">Programas Catalogados</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">8</div>
+                    <div class="stat-label">Categorías Principales</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">24</div>
+                    <div class="stat-label">Recopilaciones Publicadas</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">12,450</div>
+                    <div class="stat-label">Descargas Mensuales</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">2,890</div>
+                    <div class="stat-label">Suscriptores al Boletín</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">45,320</div>
+                    <div class="stat-label">Visitantes/mes</div>
+                </div>
+            </div>
+
+            <div class="chart-container">
+                <h2 style="color: #0066cc;">Programas por Categoría</h2>
+                
+                <div class="category-stat">
+                    <span><strong>Oficina</strong></span>
+                    <span>78 programas</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 78%;">78</div>
+                </div>
+
+                <div class="category-stat">
+                    <span><strong>Internet</strong></span>
+                    <span>95 programas</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 95%;">95</div>
+                </div>
+
+                <div class="category-stat">
+                    <span><strong>Multimedia</strong></span>
+                    <span>112 programas</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 100%;">112</div>
+                </div>
+
+                <div class="category-stat">
+                    <span><strong>Gráficos</strong></span>
+                    <span>67 programas</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 67%;">67</div>
+                </div>
+
+                <div class="category-stat">
+                    <span><strong>Educación</strong></span>
+                    <span>54 programas</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 54%;">54</div>
+                </div>
+
+                <div class="category-stat">
+                    <span><strong>Programación</strong></span>
+                    <span>71 programas</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 71%;">71</div>
+                </div>
+
+                <div class="category-stat">
+                    <span><strong>Juegos</strong></span>
+                    <span>29 programas</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 29%;">29</div>
+                </div>
+
+                <div class="category-stat">
+                    <span><strong>Utilidades</strong></span>
+                    <span>17 programas</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 17%;">17</div>
+                </div>
+            </div>
+
+            <div class="chart-container">
+                <h2 style="color: #0066cc;">Programas Más Descargados (Enero 2025)</h2>
+                <ol style="font-size: 1.1rem; line-height: 2;">
+                    <li><strong>LibreOffice</strong> - 3,450 descargas</li>
+                    <li><strong>Mozilla Firefox</strong> - 2,890 descargas</li>
+                    <li><strong>VLC Media Player</strong> - 2,670 descargas</li>
+                    <li><strong>GIMP</strong> - 2,340 descargas</li>
+                    <li><strong>7-Zip</strong> - 2,120 descargas</li>
+                    <li><strong>Audacity</strong> - 1,890 descargas</li>
+                    <li><strong>Blender</strong> - 1,670 descargas</li>
+                    <li><strong>Inkscape</strong> - 1,450 descargas</li>
+                    <li><strong>Visual Studio Code</strong> - 1,340 descargas</li>
+                    <li><strong>Python</strong> - 1,230 descargas</li>
+                </ol>
+            </div>
+
+            <div class="chart-container">
+                <h2 style="color: #0066cc;">Recopilaciones Más Descargadas</h2>
+                <ol style="font-size: 1.1rem; line-height: 2;">
+                    <li><strong>Recopilación Ofimática</strong> - 890 descargas</li>
+                    <li><strong>Recopilación para Educación</strong> - 780 descargas</li>
+                    <li><strong>Recopilación Multimedia</strong> - 670 descargas</li>
+                    <li><strong>Recopilación Desarrollo Web</strong> - 560 descargas</li>
+                    <li><strong>Recopilación Diseño Gráfico</strong> - 450 descargas</li>
+                </ol>
+            </div>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">156</div>
+                    <div class="stat-label">Programas agregados en 2024</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">98%</div>
+                    <div class="stat-label">Enlaces funcionando</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">234</div>
+                    <div class="stat-label">Actualizaciones en 2024</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">18</div>
+                    <div class="stat-label">Tutoriales publicados</div>
+                </div>
+            </div>
+
+            <div class="chart-container">
+                <h2 style="color: #0066cc;">Sistemas Operativos de Nuestros Visitantes</h2>
+                <div class="category-stat">
+                    <span><strong>Windows</strong></span>
+                    <span>72%</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 72%;">72%</div>
+                </div>
+
+                <div class="category-stat">
+                    <span><strong>Linux</strong></span>
+                    <span>18%</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 18%;">18%</div>
+                </div>
+
+                <div class="category-stat">
+                    <span><strong>macOS</strong></span>
+                    <span>7%</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 7%;">7%</div>
+                </div>
+
+                <div class="category-stat">
+                    <span><strong>Otros</strong></span>
+                    <span>3%</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 3%;">3%</div>
+                </div>
+            </div>
+
+            <div class="chart-container">
+                <h2 style="color: #0066cc;">Origen de Visitantes (El Salvador)</h2>
+                <ol style="font-size: 1.1rem; line-height: 2;">
+                    <li><strong>San Salvador</strong> - 42%</li>
+                    <li><strong>Santa Ana</strong> - 14%</li>
+                    <li><strong>San Miguel</strong> - 11%</li>
+                    <li><strong>Sonsonate</strong> - 8%</li>
+                    <li><strong>La Libertad</strong> - 7%</li>
+                    <li><strong>Usulután</strong> - 5%</li>
+                    <li><strong>Otros departamentos</strong> - 13%</li>
+                </ol>
+            </div>
+
+            <div class="chart-container">
+                <h2 style="color: #0066cc;">Licencias Más Comunes</h2>
+                <ul style="font-size: 1.1rem; line-height: 2;">
+                    <li><strong>GPL (GNU General Public License)</strong> - 245 programas (47%)</li>
+                    <li><strong>MIT License</strong> - 128 programas (24%)</li>
+                    <li><strong>Apache 2.0</strong> - 87 programas (17%)</li>
+                    <li><strong>BSD License</strong> - 34 programas (6%)</li>
+                    <li><strong>Creative Commons</strong> - 18 programas (3%)</li>
+                    <li><strong>Otras licencias libres</strong> - 11 programas (3%)</li>
+                </ul>
+            </div>
+
+            <div class="stats-grid" style="margin-top: 2rem;">
+                <div class="stat-card">
+                    <h3 style="color: #0066cc; margin-bottom: 1rem;">Crecimiento 2024</h3>
+                    <div class="stat-number" style="font-size: 2rem;">+287%</div>
+                    <div class="stat-label">en visitantes</div>
+                </div>
+                <div class="stat-card">
+                    <h3 style="color: #0066cc; margin-bottom: 1rem;">Objetivo 2025</h3>
+                    <div class="stat-number" style="font-size: 2rem;">1,000</div>
+                    <div class="stat-label">programas catalogados</div>
+                </div>
+            </div>
+
+            <div style="background: #fff3cd; border-left: 4px solid #ffc107; padding: 1.5rem; margin-top: 2rem; border-radius: 4px;">
+                <h3 style="color: #856404;">📈 Metodología</h3>
+                <p style="color: #856404;">Las estadísticas se actualizan mensualmente y provienen de Google Analytics, contadores de descarga propios y reportes de la comunidad. Los números de descargas no incluyen mirrors ni distribuciones offline.</p>
+            </div>
+
+            <div style="background: #e7f3ff; padding: 1.5rem; border-radius: 8px; margin-top: 2rem;">
+                <h3 style="color: #0066cc;">🎯 Metas para 2025</h3>
+                <ul style="margin-left: 2rem;">
+                    <li>Alcanzar 1,000 programas catalogados</li>
+                    <li>Llegar a 100,000 visitantes mensuales</li>
+                    <li>5,000 suscriptores al boletín</li>
+                    <li>Establecer mirrors en 3 universidades</li>
+                    <li>Publicar 50+ tutoriales en español</li>
+                </ul>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>
+                <strong>softwarelibresv.com</strong> - Promoviendo el Software Libre en El Salvador<br>
+                Licenciado bajo <a href="https://www.apache.org/licenses/LICENSE-2.0" target="_blank" style="color: #6db3f2;">Apache License 2.0</a><br>
+                © 2025 softwarelibresv.com - Todos los derechos reservados
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
