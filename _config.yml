@@ -1,9 +1,0 @@
-# Configuración de GitHub Pages para softwarelibresv.github.io
-baseurl: "/softwarelibresv.github.io"
-url: "https://kurosomlp.github.io"
-
-# Excluir archivos innecesarios
-exclude:
-  - README.md
-  - INSPECCION_COMPLETA.md
-  - LICENSE
