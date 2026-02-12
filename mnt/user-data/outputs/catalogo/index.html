@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Programas - softwarelibresv.com</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .program-card {
+            background: white;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            border-left: 4px solid #0066cc;
+        }
+        .program-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: start;
+            margin-bottom: 1rem;
+        }
+        .program-title {
+            color: #0066cc;
+            font-size: 1.4rem;
+            margin-bottom: 0.3rem;
+        }
+        .program-version {
+            color: #666;
+            font-size: 0.9rem;
+        }
+        .program-platforms {
+            display: flex;
+            gap: 0.5rem;
+        }
+        .platform-badge {
+            background: #e0e0e0;
+            padding: 0.3rem 0.6rem;
+            border-radius: 4px;
+            font-size: 0.8rem;
+        }
+        .program-description {
+            margin: 1rem 0;
+            line-height: 1.6;
+        }
+        .program-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 1px solid #eee;
+        }
+        .license-badge {
+            background: #d4edda;
+            color: #155724;
+            padding: 0.3rem 0.8rem;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            font-weight: bold;
+        }
+        .download-btn {
+            background: #0066cc;
+            color: white;
+            padding: 0.7rem 1.5rem;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        .download-btn:hover {
+            background: #004499;
+        }
+        .search-filter {
+            background: white;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .filter-group {
+            margin-bottom: 1rem;
+        }
+        .filter-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+            color: #333;
+        }
+        .filter-group input, .filter-group select {
+            width: 100%;
+            padding: 0.7rem;
+            border: 2px solid #ddd;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>softwarelibresv.com</h1>
+                <p class="tagline">Recopilaciones de Software Libre para El Salvador</p>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="index.html" class="active">Catálogo</a></li>
+                    <li><a href="../boletin/index.html">Boletín</a></li>
+                    <li><a href="../descargas/index.html">Recopilaciones</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <aside class="sidebar">
+            <nav class="secondary-nav">
+                <h3>Categorías</h3>
+                <ul>
+                    <li><a href="index.html">📚 Todos los Programas</a></li>
+                    <li><a href="oficina.html">📝 Oficina (78)</a></li>
+                    <li><a href="internet.html">🌐 Internet (95)</a></li>
+                    <li><a href="multimedia.html">🎵 Multimedia (112)</a></li>
+                    <li><a href="graficos.html">🎨 Gráficos (67)</a></li>
+                    <li><a href="educacion.html">🎓 Educación (54)</a></li>
+                    <li><a href="programacion.html">💻 Programación (71)</a></li>
+                    <li><a href="juegos.html">🎮 Juegos (29)</a></li>
+                    <li><a href="utilidades.html">🔧 Utilidades (17)</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="content">
+            <article class="welcome">
+                <h1>Catálogo de Programas</h1>
+                <p>Explora nuestra colección de más de 500 programas de software libre organizados por categorías. Todos son gratuitos, de código abierto y legal descargar.</p>
+            </article>
+
+            <div class="search-filter">
+                <h3 style="color: #0066cc; margin-bottom: 1rem;">🔍 Buscar y Filtrar</h3>
+                <div class="filter-group">
+                    <label for="search">Buscar programa:</label>
+                    <input type="text" id="search" placeholder="Ej: editor de imágenes, navegador web...">
+                </div>
+                <div class="filter-group">
+                    <label for="category">Categoría:</label>
+                    <select id="category">
+                        <option value="">Todas las categorías</option>
+                        <option value="oficina">Oficina</option>
+                        <option value="internet">Internet</option>
+                        <option value="multimedia">Multimedia</option>
+                        <option value="graficos">Gráficos</option>
+                        <option value="educacion">Educación</option>
+                        <option value="programacion">Programación</option>
+                        <option value="juegos">Juegos</option>
+                        <option value="utilidades">Utilidades</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="platform">Plataforma:</label>
+                    <select id="platform">
+                        <option value="">Todas las plataformas</option>
+                        <option value="windows">Windows</option>
+                        <option value="linux">Linux</option>
+                        <option value="macos">macOS</option>
+                        <option value="multi">Multiplataforma</option>
+                    </select>
+                </div>
+            </div>
+
+            <h2 style="color: #0066cc; margin-bottom: 1.5rem;">⭐ Programas Destacados</h2>
+
+            <div class="program-card">
+                <div class="program-header">
+                    <div>
+                        <h3 class="program-title">LibreOffice</h3>
+                        <div class="program-version">Versión 24.2 | Categoría: Oficina</div>
+                    </div>
+                    <div class="program-platforms">
+                        <span class="platform-badge">Windows</span>
+                        <span class="platform-badge">Linux</span>
+                        <span class="platform-badge">macOS</span>
+                    </div>
+                </div>
+                <div class="program-description">
+                    Suite ofimática completa y gratuita que incluye procesador de textos (Writer), hoja de cálculo (Calc), presentaciones (Impress), base de datos (Base), editor de diagramas (Draw) y editor de fórmulas (Math). Compatible con formatos de Microsoft Office.
+                </div>
+                <div class="program-footer">
+                    <span class="license-badge">GPL v3</span>
+                    <a href="https://www.libreoffice.org/download/download/" class="download-btn" target="_blank">Descargar →</a>
+                </div>
+            </div>
+
+            <div class="program-card">
+                <div class="program-header">
+                    <div>
+                        <h3 class="program-title">Mozilla Firefox</h3>
+                        <div class="program-version">Versión 122 | Categoría: Internet</div>
+                    </div>
+                    <div class="program-platforms">
+                        <span class="platform-badge">Windows</span>
+                        <span class="platform-badge">Linux</span>
+                        <span class="platform-badge">macOS</span>
+                    </div>
+                </div>
+                <div class="program-description">
+                    Navegador web rápido, seguro y que respeta tu privacidad. Bloquea rastreadores por defecto, consume menos memoria que otros navegadores y ofrece sincronización entre dispositivos. Desarrollado por la Fundación Mozilla sin fines de lucro.
+                </div>
+                <div class="program-footer">
+                    <span class="license-badge">MPL 2.0</span>
+                    <a href="https://www.mozilla.org/es-ES/firefox/new/" class="download-btn" target="_blank">Descargar →</a>
+                </div>
+            </div>
+
+            <div class="program-card">
+                <div class="program-header">
+                    <div>
+                        <h3 class="program-title">GIMP</h3>
+                        <div class="program-version">Versión 2.10.36 | Categoría: Gráficos</div>
+                    </div>
+                    <div class="program-platforms">
+                        <span class="platform-badge">Windows</span>
+                        <span class="platform-badge">Linux</span>
+                        <span class="platform-badge">macOS</span>
+                    </div>
+                </div>
+                <div class="program-description">
+                    Editor de imágenes profesional con capacidades similares a Photoshop. Permite retoque fotográfico, composición de imágenes, creación de gráficos web, conversión entre formatos y mucho más. Soporta plugins y scripts para extender funcionalidad.
+                </div>
+                <div class="program-footer">
+                    <span class="license-badge">GPL v3</span>
+                    <a href="https://www.gimp.org/downloads/" class="download-btn" target="_blank">Descargar →</a>
+                </div>
+            </div>
+
+            <div class="program-card">
+                <div class="program-header">
+                    <div>
+                        <h3 class="program-title">VLC Media Player</h3>
+                        <div class="program-version">Versión 3.0.20 | Categoría: Multimedia</div>
+                    </div>
+                    <div class="program-platforms">
+                        <span class="platform-badge">Windows</span>
+                        <span class="platform-badge">Linux</span>
+                        <span class="platform-badge">macOS</span>
+                    </div>
+                </div>
+                <div class="program-description">
+                    Reproductor multimedia universal que soporta prácticamente todos los formatos de video y audio sin necesidad de códecs adicionales. Incluye capacidades de streaming, conversión de formatos y reproducción de DVDs/CDs. Ligero y sin publicidad.
+                </div>
+                <div class="program-footer">
+                    <span class="license-badge">GPL v2</span>
+                    <a href="https://www.videolan.org/vlc/" class="download-btn" target="_blank">Descargar →</a>
+                </div>
+            </div>
+
+            <div class="program-card">
+                <div class="program-header">
+                    <div>
+                        <h3 class="program-title">Visual Studio Code</h3>
+                        <div class="program-version">Versión 1.86 | Categoría: Programación</div>
+                    </div>
+                    <div class="program-platforms">
+                        <span class="platform-badge">Windows</span>
+                        <span class="platform-badge">Linux</span>
+                        <span class="platform-badge">macOS</span>
+                    </div>
+                </div>
+                <div class="program-description">
+                    Editor de código moderno y potente con soporte para múltiples lenguajes de programación. Incluye IntelliSense, debugging integrado, control de versiones Git, terminal integrada y miles de extensiones disponibles. Ideal para desarrollo web, Python, JavaScript y más.
+                </div>
+                <div class="program-footer">
+                    <span class="license-badge">MIT</span>
+                    <a href="https://code.visualstudio.com/download" class="download-btn" target="_blank">Descargar →</a>
+                </div>
+            </div>
+
+            <div class="program-card">
+                <div class="program-header">
+                    <div>
+                        <h3 class="program-title">Blender</h3>
+                        <div class="program-version">Versión 4.0 | Categoría: Gráficos</div>
+                    </div>
+                    <div class="program-platforms">
+                        <span class="platform-badge">Windows</span>
+                        <span class="platform-badge">Linux</span>
+                        <span class="platform-badge">macOS</span>
+                    </div>
+                </div>
+                <div class="program-description">
+                    Suite completa de creación 3D que soporta modelado, rigging, animación, simulación, rendering, composición y motion tracking. Usado por estudios profesionales para crear películas, videojuegos y efectos visuales. Incluye motor de juegos integrado.
+                </div>
+                <div class="program-footer">
+                    <span class="license-badge">GPL v3</span>
+                    <a href="https://www.blender.org/download/" class="download-btn" target="_blank">Descargar →</a>
+                </div>
+            </div>
+
+            <div style="background: #e7f3ff; padding: 1.5rem; border-radius: 8px; margin-top: 2rem;">
+                <h3 style="color: #0066cc;">🔍 Explora por Categorías</h3>
+                <p>Usa el menú lateral para navegar por categorías específicas y descubrir más programas según tus necesidades.</p>
+                <p><strong>Total de programas en el catálogo: 523</strong></p>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>
+                <strong>softwarelibresv.com</strong> - Promoviendo el Software Libre en El Salvador<br>
+                Licenciado bajo <a href="https://www.apache.org/licenses/LICENSE-2.0" target="_blank" style="color: #6db3f2;">Apache License 2.0</a><br>
+                © 2025 softwarelibresv.com - Todos los derechos reservados
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
